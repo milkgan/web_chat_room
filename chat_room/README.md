@@ -1,4 +1,4 @@
-# chat_room1
+# chat_room
 
 ## Project setup
 ```
