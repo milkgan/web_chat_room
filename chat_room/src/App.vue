@@ -26,7 +26,7 @@ export default {
       users: [],
     });
     // 建立socket连接
-    const socket = io("http://localhost:3000", { path: "/chat" });
+    const socket = io("ws://localhost:3000", { path: "/chat" });
     // 备注：这部分因为是on监听所以是放出来，而不是放到socket.emit("$login",(socket)=>{})里面
     socket.on("$name", (name) => {
       chat_data.my_name = name;
